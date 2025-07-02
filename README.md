@@ -1,99 +1,89 @@
-📱 WhatsApp Backend
-A Java Spring Boot backend replicating the core functionality of WhatsApp, including user login/logout, messaging, and notifications.
+WhatsApp Backend
+A Java Spring Boot backend replicating core WhatsApp functionality, including user authentication, chat messaging, and notification handling.
 
 
 
 
-✨ Features
-User authentication (login/logout)
+1️⃣ Features
+User login and logout
 
-Send & receive messages
+One-to-one messaging
 
-Real-time notifications (simulated)
+Real-time notification simulation
 
-JPA-based persistence
+Clean service-controller architecture
 
-Modular structure with separate controllers and services
+JPA-based data persistence
 
-🚀 Getting Started
-Prerequisites
+2️⃣ Getting Started
+2.1 Prerequisites
 Java 17+
 
 Maven 3+
 
-A relational database (configured via Spring JPA)
+Relational database (H2 or MySQL, configured via JPA)
 
-Installation
-Clone the repository:
+2.2 Installation
+Clone the repository
 
-bash
+
 
 
 git clone https://github.com/yourusername/whatsapp-backend.git
 cd whatsapp-backend
-Install dependencies and build:
+Build the project
 
-bash
+
 
 
 mvn clean install
-Running the application
-Recommended way:
+2.3 Running the Application
+Recommended way
 
-bash
+
 
 
 mvn spring-boot:run
-or build the JAR and run:
+Alternative (JAR build):
 
-bash
+
+
 
 mvn package
 java -jar target/whatsapp-backend.jar
-(Alternatively, you can still run from VS Code by right-clicking the main WhatsappApplication.java and selecting “Run”).
+VS Code option: right-click WhatsappApplication.java → Run.
 
-🗂️ Project Structure
+3️⃣ Project Structure
+plaintext
 
-src/main/java/com/example/whatsapp
-  ├── controller
+
+src/main/java/com/example/whatsapp/
+  ├── controller/
   │     ├── ChatController.java
   │     └── UserController.java
-  ├── service
+  ├── service/
   │     ├── ChatService.java
   │     ├── NotificationService.java
   │     └── UserService.java
-  ├── model
+  ├── model/
   │     ├── Message.java
   │     └── User.java
-  ├── dto
+  ├── dto/
   │     └── MessageDTO.java
   └── WhatsappApplication.java
-📚 API Overview
-UserController
-POST /login
+4️⃣ API Endpoints
+4.1 UserController
+Method	Endpoint	Description
+POST	/login	Log in a user
+POST	/logout	Log out a user
+GET	/users/{id}	Get user details
 
-Logs in a user
+4.2 ChatController
+Method	Endpoint	Description
+POST	/messages	Send a new message
+GET	/messages/{chatId}	Retrieve messages for a chat
 
-POST /logout
-
-Logs out a user
-
-GET /users/{id}
-
-Fetches user details
-
-ChatController
-POST /messages
-
-Sends a message
-
-GET /messages/{chatId}
-
-Retrieves messages for a chat
-
-(If you want, paste the actual method signatures, and I’ll expand these into detailed Swagger-like docs.)
-
-🏗️ Technologies Used
+5️⃣ Technologies Used
 Java 17
 
 Spring Boot 3
@@ -102,19 +92,19 @@ Spring Data JPA
 
 Maven
 
-H2 / MySQL (depending on your JPA config)
+H2 or MySQL (configurable)
 
-📣 Future Improvements
-Add group chats
+6️⃣ Future Enhancements
+Group chat functionality
 
-Integrate WebSocket for live updates
+Media (images, videos) support
 
-Add media (image/video) attachments
+WebSocket for live chat updates
 
-Enhance security with JWT
+JWT-based secure authentication
 
-🤝 Contributing
-Pull requests are welcome! Feel free to open an issue or submit a PR.
+7️⃣ Contributing
+Pull requests and suggestions are welcome. Please open an issue or submit a PR if you’d like to contribute!
 
-📄 License
+8️⃣ License
 This project is licensed under the MIT License.
