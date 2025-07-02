@@ -29,7 +29,7 @@ Clone the repository
 
 
 
-git clone https://github.com/yourusername/whatsapp-backend.git
+git clone https://github.com/Harshad046/Whatsapp-Design-in-Java.git
 cd whatsapp-backend
 Build the project
 
