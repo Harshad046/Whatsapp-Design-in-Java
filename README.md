@@ -76,11 +76,16 @@ src/main/java/com/example/whatsapp/
 
 ![WhatsApp Message Sending Workflow](assets/Layer-wise Architecture.png)
 
+This flowchart illustrates the typical process when a client application sends a message through the WHATSAPP backend.
+
+---
+
 ## System Architecture - UML Component Diagram
 
-![WhatsApp Project - Component & Layer Overview(assets/New Text Document..gitkeep)
+![WhatsApp Project - Component & Layer Overview](assets/New Text Document..gitkeep)
 
-  
+This component diagram provides an overview of the key architectural layers and their interactions within the WHATSAPP backend system.
+
 4️⃣ API Endpoints
 4.1 UserController
 Method	Endpoint	Description
@@ -105,8 +110,6 @@ Maven
 H2 or MySQL (configurable)
 
 6️⃣ Future Enhancements
-Group chat functionality
-
 Media (images, videos) support
 
 WebSocket for live chat updates
