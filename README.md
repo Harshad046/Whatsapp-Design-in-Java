@@ -74,11 +74,11 @@ src/main/java/com/example/whatsapp/
 
 ## Project Workflow Flowchart
 
-![WhatsApp Message Sending Workflow](assets/Layer-wise Architecture.png)]
+![WhatsApp Message Sending Workflow](assets/Layer-wise Architecture.png)
 
 ## System Architecture - UML Component Diagram
 
-![WhatsApp Project - Component & Layer Overview(assets/New Text Document..gitkeep)]
+![WhatsApp Project - Component & Layer Overview(assets/New Text Document..gitkeep)
 
   
 4️⃣ API Endpoints
