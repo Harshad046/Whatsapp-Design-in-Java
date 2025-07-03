@@ -71,6 +71,16 @@ src/main/java/com/example/whatsapp/
   ├── dto/
   │     └── MessageDTO.java
   └── WhatsappApplication.java
+
+## Project Workflow Flowchart
+
+![WhatsApp Message Sending Workflow](assets/Layer-wise Architecture.png)]
+
+## System Architecture - UML Component Diagram
+
+![WhatsApp Project - Component & Layer Overview(assets/New Text Document..gitkeep)]
+
+  
 4️⃣ API Endpoints
 4.1 UserController
 Method	Endpoint	Description
